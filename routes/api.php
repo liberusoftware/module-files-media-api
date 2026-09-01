@@ -8,4 +8,3 @@ use Liberu\Foundation\FilesMediaApi\Http\Controllers\StatusController;
 Route::prefix('api/v1/files-media')->middleware('api')->group(function (): void {
     Route::get('/status', StatusController::class)->name('files-media-api.status');
 });
-
